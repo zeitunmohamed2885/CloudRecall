@@ -1,6 +1,4 @@
-
 import { supabase } from "./supabase-client.js";
-
 async function diagnoseSupabase() {
   const { data: sessionData, error: sessionError } =
     await supabase.auth.getSession();
