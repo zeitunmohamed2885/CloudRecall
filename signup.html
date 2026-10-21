@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Create a CloudRecall AI account to practise AZ-900 and save your learning progress."
+  >
+  <meta name="theme-color" content="#0b1020">
+
+  <title>Create Account | CloudRecall AI</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a class="nav__brand" href="./index.html">
+          <span class="nav__brand-icon" aria-hidden="true">C</span>
+          <span>CloudRecall<span class="text-accent"></span></span>
+        </a>
+
+        <div class="nav__links">
+          <a class="nav__link" href="./index.html">Home</a>
+          <a class="btn btn--outline" href="./signin.html">Sign in</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="auth-section section">
+      <div class="container">
+        <div class="auth-panel quiz-panel">
+          <span class="eyebrow">JOIN CLOUDRECALL </span>
+
+          <h1>Create your account</h1>
+
+          <p>
+            Create an account to save your AZ-900 learning progress
+            and continue practising across sessions.
+          </p>
+
+          <form id="signup-form">
+            <label for="signup-email">Email address</label>
+            <input
+              id="signup-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            >
+
+            <label for="signup-password">Password</label>
+            <input
+              id="signup-password"
+              name="password"
+              type="password"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
+
+            <button class="btn btn--primary" type="submit">
+              Create account
+            </button>
+          </form>
+
+          <div id="auth-status" role="status" aria-live="polite"></div>
+
+          <p>
+            Already have an account?
+            <a href="./signin.html">Sign in</a>
+          </p>
+
+          <p>
+            <a href="./index.html">← Back to home</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="nav__brand" href="./index.html">
+        <span class="nav__brand-icon" aria-hidden="true">C</span>
+        <span>CloudRecall<span class="text-accent"></span></span>
+      </a>
+
+      <p>Independent AZ-900 study aid. Not affiliated with Microsoft.</p>
+    </div>
+  </footer>
+  <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

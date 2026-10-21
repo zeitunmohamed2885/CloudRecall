@@ -1,0 +1,82 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track your CloudRecall AI AZ-900 quiz progress and learning activity.">
+  <title>My Progress | CloudRecall</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="./index.html">CloudRecall</a>
+
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./quiz.html">Practise Quiz</a>
+        <a href="./dashboard.html" aria-current="page">My Progress</a>
+        <button type="button" id="sign-out-button">Sign Out</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="page-heading" aria-labelledby="dashboard-title">
+      <p class="eyebrow">YOUR LEARNING JOURNEY</p>
+      <h1 id="dashboard-title">My Progress</h1>
+      <p>Review your AZ-900 practice activity and keep moving towards your learning goals.</p>
+      <p id="dashboard-status" role="status" aria-live="polite">
+        Loading your progress...
+      </p>
+    </section>
+
+    <section class="dashboard-stats" aria-label="Progress summary">
+      <article class="stat-card">
+        <h2>Quizzes Completed</h2>
+        <p id="quizzes-completed">—</p>
+      </article>
+
+      <article class="stat-card">
+        <h2>Average Score</h2>
+        <p id="average-score">—</p>
+      </article>
+
+      <article class="stat-card">
+        <h2>Best Score</h2>
+        <p id="best-score">—</p>
+      </article>
+    </section>
+
+    <section class="dashboard-section" aria-labelledby="recent-activity-title">
+      <div class="section-heading">
+        <h2 id="recent-activity-title">Recent Quiz Activity</h2>
+        <a href="./quiz.html">Start a Quiz</a>
+      </div>
+
+      <div id="recent-activity">
+        <p id="activity-empty-state">
+          Your completed quiz attempts will appear here once progress tracking is connected.
+        </p>
+      </div>
+    </section>
+
+    <section class="dashboard-section" aria-labelledby="next-steps-title">
+      <h2 id="next-steps-title">Keep Learning</h2>
+      <p>Continue practising the AZ-900 topics to strengthen your understanding.</p>
+      <a class="btn btn-primary" href="./quiz.html">Continue Practising</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CloudRecall  — Learn, practise, and track your progress.</p>
+  </footer>
+
+  <script type="module" src="./js/dashboard.js"></script>
+</body>
+</html>

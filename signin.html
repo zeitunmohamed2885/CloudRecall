@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Sign in to CloudRecall AI to continue your AZ-900 learning journey."
+  >
+  <meta name="theme-color" content="#0b1020">
+
+  <title>Sign In | CloudRecall </title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a class="nav__brand" href="./index.html">
+          <span class="nav__brand-icon" aria-hidden="true">C</span>
+          <span>CloudRecall<span class="text-accent"> </span></span>
+        </a>
+
+        <div class="nav__links">
+          <a class="nav__link" href="./index.html">Home</a>
+          <a class="btn btn--primary" href="./signup.html">Sign up</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="auth-section section">
+      <div class="container">
+        <div class="auth-panel quiz-panel">
+          <span class="eyebrow">WELCOME BACK</span>
+
+          <h1>Sign in to CloudRecall</h1>
+
+          <p>
+            Continue your AZ-900 learning journey and pick up
+            where you left off.
+          </p>
+
+          <form id="login-form">
+            <label for="login-email">Email address</label>
+            <input
+              id="login-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            >
+
+            <label for="login-password">Password</label>
+            <input
+              id="login-password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+            >
+
+            <button class="btn btn--primary" type="submit">
+              Sign in
+            </button>
+          </form>
+
+          <div id="auth-status" role="status" aria-live="polite"></div>
+
+          <p>
+            New to CloudRecall ?
+            <a href="./signup.html">Create an account</a>
+          </p>
+
+          <p>
+            <a href="./index.html">← Back to home</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="nav__brand" href="./index.html">
+        <span class="nav__brand-icon" aria-hidden="true">C</span>
+        <span>CloudRecall<span class="text-accent"></span></span>
+      </a>
+
+      <p>Independent AZ-900 study aid. Not affiliated with Microsoft.</p>
+    </div>
+  </footer>
+</body>
+</html>

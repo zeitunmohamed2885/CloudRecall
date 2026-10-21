@@ -1,0 +1,227 @@
+
+/* ============================================================
+   CloudRecall AI — Responsive Styles
+   ============================================================ */
+
+@media (max-width: 1000px) {
+  .nav__links {
+    gap: 18px;
+  }
+
+  .hero__grid {
+    gap: 38px;
+  }
+
+  .hero__content h1 {
+    font-size: clamp(2.7rem, 6vw, 4.1rem);
+  }
+
+  .features__grid,
+  .topics__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-card:last-child,
+  .topic-card:last-child {
+    grid-column: auto;
+  }
+
+  .floating-chip--one {
+    right: -4px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --nav-height: 68px;
+  }
+
+  .container,
+  .nav__inner {
+    width: calc(100% - 36px);
+  }
+
+  .section {
+    padding-block: 76px;
+  }
+
+  .nav__inner {
+    gap: 12px;
+  }
+
+  .nav__toggle {
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+
+  .nav__links {
+    position: absolute;
+    top: calc(var(--nav-height) + 8px);
+    right: 18px;
+    left: 18px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: #101629;
+    box-shadow: var(--shadow-card);
+  }
+
+  .nav__links.is-open {
+    display: flex;
+  }
+
+  .nav__links .nav__link {
+    padding: 13px 12px;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav__links .nav__link:hover {
+    background: rgba(167, 139, 250, 0.08);
+  }
+
+  .nav__links .btn {
+    margin-top: 8px;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .hero {
+    padding-top: 62px;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__content .eyebrow {
+    justify-content: center;
+  }
+
+  .hero__content h1,
+  .hero__description {
+    margin-inline: auto;
+  }
+
+  .hero__content h1 {
+    max-width: 650px;
+    font-size: clamp(2.7rem, 9vw, 4.2rem);
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__visual {
+    width: 100%;
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .floating-chip--one {
+    right: 0;
+  }
+
+  .section-heading {
+    margin-bottom: 34px;
+  }
+
+  .quiz-setup__controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .quiz-setup__controls .btn {
+    width: 100%;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container,
+  .nav__inner {
+    width: calc(100% - 30px);
+  }
+
+  .section {
+    padding-block: 60px;
+  }
+
+  .hero {
+    padding-top: 48px;
+  }
+
+  .hero__content h1 {
+    font-size: clamp(2.45rem, 11vw, 3.4rem);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .preview-card {
+    padding: 19px;
+  }
+
+  .floating-chip {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: table;
+    margin: 12px auto 0;
+  }
+
+  .features__grid,
+  .topics__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card,
+  .topic-card {
+    padding: 23px;
+  }
+
+  .topic-card {
+    min-height: auto;
+  }
+
+  .quiz-panel {
+    padding: 20px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .quiz__actions {
+    flex-direction: column;
+  }
+
+  .quiz__actions .btn {
+    width: 100%;
+  }
+
+  .answer-option {
+    padding: 13px;
+    font-size: 0.9rem;
+  }
+
+  .footer__inner {
+    padding-block: 28px;
+  }
+}

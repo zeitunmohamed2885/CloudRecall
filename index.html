@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="CloudRecall AI helps learners practise Azure fundamentals with topic-based quizzes and clear explanations."
+  >
+  <meta name="theme-color" content="#0b1020">
+
+  <title>CloudRecall | AZ-900 Practice</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a class="nav__brand" href="./index.html" aria-label="CloudRecall AI home">
+          <span class="nav__brand-icon" aria-hidden="true">C</span>
+          <span>CloudRecall<span class="text-accent"></span></span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav__links" id="nav-links">
+          <a class="nav__link" href="#features">Features</a>
+          <a class="nav__link" href="#topics">AZ-900 Topics</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="btn btn--outline" href="./signin.html">Sign in</a>
+          <a class="btn btn--primary" href="./signup.html">Sign up</a>
+          <a class="btn btn--outline" href="./quiz.html">Try a Quiz</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">YOUR AZURE LEARNING COMPANION</span>
+
+          <h1>
+            Learn Azure.
+            <span class="text-gradient">Understand why.</span>
+          </h1>
+
+          <p class="hero__description">
+            Practise Azure fundamentals with topic-based quizzes,
+            instant feedback, and explanations that help you understand
+            every answer.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="./quiz.html">
+              Try a Quiz <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn--outline" href="#topics">Explore topics</a>
+          </div>
+
+          <p class="hero__note">
+            Built for learning, not just memorising answers.
+          </p>
+        </div>
+
+        <div class="hero__visual" aria-label="Quiz preview">
+          <div class="preview-card">
+            <div class="preview-card__top">
+              <span class="badge badge--purple">AZ-900 Practice</span>
+              <span class="preview-card__indicator">
+                <span class="status-dot"></span>
+                Learning mode
+              </span>
+            </div>
+
+            <p class="preview-card__label">SAMPLE QUESTION</p>
+
+            <h2>
+              Which cloud benefit describes increasing or decreasing
+              resources to meet demand?
+            </h2>
+
+            <div class="preview-option">
+              <span>A</span> High availability
+            </div>
+
+            <div class="preview-option preview-option--highlight">
+              <span>B</span> Elasticity
+            </div>
+
+            <div class="preview-option">
+              <span>C</span> Disaster recovery
+            </div>
+
+            <p class="preview-card__hint">
+              Preview only. Take a quiz to receive feedback and explanations.
+            </p>
+          </div>
+
+          <div class="floating-chip floating-chip--one">
+            <span aria-hidden="true">✦</span>
+            Learn from every answer
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">A BETTER WAY TO PRACTISE</span>
+          <h2>
+            Turn wrong answers into
+            <span class="text-gradient">understanding.</span>
+          </h2>
+          <p>
+            Focus on understanding Azure concepts instead of guessing
+            your way through practice questions.
+          </p>
+        </div>
+
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">◎</div>
+            <h3>Topic-based quizzes</h3>
+            <p>
+              Practise cloud concepts, Azure architecture and services,
+              and management and governance separately.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">↗</div>
+            <h3>Instant feedback</h3>
+            <p>
+              Find out whether your selected answer is correct after
+              submitting it.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">✧</div>
+            <h3>Clear explanations</h3>
+            <p>
+              Understand why an answer is correct and why the
+              alternatives do not fit the question.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="topics section" id="topics">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">AZ-900 LEARNING AREAS</span>
+          <h2>Choose your learning focus.</h2>
+          <p>
+            Start with one subject and build your understanding step by step.
+          </p>
+        </div>
+
+        <div class="topics__grid">
+          <article class="topic-card">
+            <span class="topic-card__number">01</span>
+            <h3>Cloud concepts</h3>
+            <p>
+              Cloud computing, shared responsibility, consumption-based
+              models, and cloud benefits.
+            </p>
+            <a class="text-link" href="./quiz.html?topic=cloud">
+              Practise this topic →
+            </a>
+          </article>
+
+          <article class="topic-card">
+            <span class="topic-card__number">02</span>
+            <h3>Azure architecture and services</h3>
+            <p>
+              Azure regions, availability zones, compute, networking,
+              storage, and infrastructure.
+            </p>
+            <a class="text-link" href="./quiz.html?topic=architecture">
+              Practise this topic →
+            </a>
+          </article>
+
+          <article class="topic-card">
+            <span class="topic-card__number">03</span>
+            <h3>Azure management and governance</h3>
+            <p>
+              Cost management, resource governance, compliance, and
+              management tools.
+            </p>
+            <a class="text-link" href="./quiz.html?topic=governance">
+              Practise this topic →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about__content">
+        <span class="eyebrow">LEARN WITH PURPOSE</span>
+        <h2>Understanding comes before memorisation.</h2>
+        <p>
+          CloudRecall AI makes Azure fundamentals practice more useful
+          by pairing answers with explanations. Your account and
+          cloud-backed learning progress will be managed separately.
+        </p>
+        <a class="btn btn--primary" href="./quiz.html">
+          Try the practice quiz
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="nav__brand" href="./index.html">
+        <span class="nav__brand-icon" aria-hidden="true">C</span>
+        <span>CloudRecall<span class="text-accent"></span></span>
+      </a>
+
+      <p>
+        Independent AZ-900 study aid. Not affiliated with Microsoft.
+      </p>
+
+      <a class="footer__link" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

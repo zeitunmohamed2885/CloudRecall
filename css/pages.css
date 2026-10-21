@@ -1,0 +1,116 @@
+
+/* ============================================================
+   CloudRecall AI — Page Layouts
+   ============================================================ */
+
+/* Hero */
+.hero {
+  overflow: hidden;
+  padding-top: 88px;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: clamp(40px, 7vw, 90px);
+}
+
+.hero__content h1 {
+  max-width: 700px;
+  margin-bottom: 24px;
+  font-size: clamp(2.8rem, 5.6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.075em;
+  line-height: 1.05;
+}
+
+.hero__description {
+  max-width: 570px;
+  margin-bottom: 28px;
+  font-size: clamp(1rem, 1.6vw, 1.13rem);
+  line-height: 1.85;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-bottom: 23px;
+}
+
+.hero__note {
+  color: var(--color-text-subtle);
+  font-size: 0.82rem;
+}
+
+.hero__visual {
+  position: relative;
+  padding: 20px 0;
+}
+
+.hero__visual .preview-card {
+  max-width: 460px;
+  margin-inline: auto;
+}
+
+.floating-chip--one {
+  top: 0;
+  right: -12px;
+  color: var(--color-cyan);
+}
+
+/* Features */
+.features {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(17, 24, 43, 0.35),
+    transparent
+  );
+}
+
+/* Topics */
+.topics {
+  background: rgba(13, 18, 34, 0.32);
+}
+
+/* Quiz */
+.quiz-section {
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(139, 92, 246, 0.06),
+      transparent 65%
+    );
+}
+
+/* About */
+.about {
+  padding-top: 70px;
+}
+
+.about__content {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.about__content h2 {
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.about__content p {
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.about__disclaimer {
+  margin-top: 22px;
+  padding: 18px 22px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: 0.85rem;
+}

@@ -1,0 +1,8 @@
+# Local Supabase configuration
+js/supabase-config.js
+
+# Other local configuration
+.env
+.env.*
+!.env.example
+node_modules/

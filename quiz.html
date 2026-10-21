@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Practise AZ-900 questions with CloudRecall AI and learn from answer explanations."
+  >
+  <meta name="theme-color" content="#0b1020">
+
+  <title>Practice Quiz | CloudRecall </title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <script type="module" src="./js/quiz-page.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a class="nav__brand" href="./index.html">
+          <span class="nav__brand-icon" aria-hidden="true">C</span>
+          <span>CloudRecall<span class="text-accent"> AI</span></span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav__links" id="nav-links">
+          <a class="nav__link" href="./index.html">Home</a>
+          <a class="nav__link" href="./dashboard.html">My Progress</a>
+          <a class="btn btn--outline" href="./signin.html">Sign in</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="quiz-section section" id="quiz">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">YOUR PRACTICE SESSION</span>
+          <h1>Test your understanding.</h1>
+          <p>
+            Choose a topic, answer each question, and review the explanation
+            before moving to the next question.
+          </p>
+        </div>
+
+        <div class="quiz-panel" id="quiz-panel">
+          <div class="quiz-setup" id="quiz-setup">
+            <label for="topic-select">Choose a topic</label>
+
+            <select id="topic-select" name="topic">
+              <option value="all">All topics</option>
+              <option value="cloud">Cloud concepts</option>
+              <option value="architecture">
+                Azure architecture and services
+              </option>
+              <option value="governance">
+                Azure management and governance
+              </option>
+            </select>
+
+            <button class="btn btn--primary" id="start-quiz" type="button">
+              Start quiz
+            </button>
+          </div>
+
+          <div class="quiz-content" id="quiz-content" hidden>
+            <div class="quiz-progress">
+              <span id="question-counter">Question 1</span>
+              <span id="question-topic" class="badge badge--purple"></span>
+            </div>
+
+            <div
+              class="progress-track"
+              role="progressbar"
+              aria-label="Quiz progress"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              id="quiz-progress"
+            >
+              <div
+                class="progress-track__bar"
+                id="quiz-progress-bar"
+              ></div>
+            </div>
+
+            <h2 class="quiz-question" id="question-text"></h2>
+
+            <form id="answer-form">
+              <fieldset class="answer-fieldset" id="answer-fieldset">
+                <legend class="sr-only">Select one answer</legend>
+                <div id="answer-options" class="answer-options"></div>
+              </fieldset>
+
+              <div
+                id="answer-feedback"
+                class="answer-feedback"
+                role="status"
+                aria-live="polite"
+                hidden
+              ></div>
+
+              <div class="quiz-actions">
+                <button
+                  class="btn btn--primary"
+                  id="submit-answer"
+                  type="submit"
+                >
+                  Check answer
+                </button>
+
+                <button
+                  class="btn btn--outline"
+                  id="next-question"
+                  type="button"
+                  hidden
+                >
+                  Next question →
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="quiz-results" id="quiz-results" hidden>
+            <span class="eyebrow">SESSION COMPLETE</span>
+            <h2>Your practice results</h2>
+            <p id="results-summary"></p>
+            <p id="results-message"></p>
+
+            <button
+              class="btn btn--primary"
+              id="restart-quiz"
+              type="button"
+            >
+              Practise again
+            </button>
+
+            <p>
+              <a href="./dashboard.html">View my learning progress</a>
+            </p>
+            <p>
+              <a href="./index.html">Return to home</a>
+            </p>
+          </div>
+        </div>
+
+        <p class="quiz-disclaimer">
+          CloudRecall AI is an independent study aid and is not affiliated
+          with or endorsed by Microsoft. AZ-900 is a Microsoft certification.
+          Practice questions are for learning purposes and are not official
+          Microsoft exam questions.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="nav__brand" href="./index.html">
+        <span class="nav__brand-icon" aria-hidden="true">C</span>
+        <span>CloudRecall<span class="text-accent"></span></span>
+      </a>
+
+      <p>Independent AZ-900 study aid. Not affiliated with Microsoft.</p>
+    </div>
+  </footer>
+</body>
+</html>
